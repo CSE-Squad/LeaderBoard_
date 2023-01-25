@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../Stragem Event/Stratagem Website"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"liveServer.settings.port": 5501
+	}
+}

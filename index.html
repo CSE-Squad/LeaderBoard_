@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ind_style.css">
+    <script src="https://kit.fontawesome.com/1dc055f0a8.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        
+        <label class="logo-label">
+            <img src="Squadlogo_2.png" alt="logo" width="50px" class="logo">
+            CSE SQUAD</label>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="announcement.html">Announcement</a></li>
+            <li><a href="announcement.html">About Us</a></li>
+            <li><a href="announcement.html">Connect</a></li>
+        </ul>
+    </nav>
+    <section class="main">
+        <section class="main2">
+            <div class="box box1">
+                <h2>CSE SQUAD 2022-26</h2>
+                <h1>Let's make things bigger</h1>
+                <h3>A Community of Tech-Enthusiasts </h3>
+            </div>
+            <div class="box box2">
+                <img src="community4.png" alt="communityimg">
+            </div>
+        </section>
+    </section>
+    
+
+    <!-- --------------Achievements-------------  -->
+    <section class="beta-red mySwiper">
+        <div class="board">
+            <h2>Board Of Fame</h2>
+        </div>
+        <div class="section-header">
+          <h2>Achievers</h2>
+          <p>The Board of Fame for Achievers of LPU</p>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="vishesh.jpg" alt="card image" />
+            </div>
+  
+            <div class="card__content">
+              <span class="card__name">Yashaswee Kesharwani</span>
+              <!-- <span class="card__name1">Section: K22AA</span> -->
+  
+              <p class="card__text">
+                Won First prizw in coding challenge hosted by LPU School of Computer Science and engineering with a team of four peoples.
+              </p>
+              <p class="social">
+                <a href="https://www.linkedin.com/in/yashasweek9"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+  
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="Adityarajsingh.jpg" alt="card image" />
+            </div>
+  
+            <div class="card__content">
+              <span class="card__name">Aditya Raj Singh</span>
+              <!-- <span class="card__name1">Section: K22</span> -->
+              <p class="card__text">
+                Won first prize in an event conducted by LPU-CPE on life skills, Where students had to answer the questions(based on life skills) by standing on stage.
+              </p>
+              <p class="social">
+                <a href="https://www.linkedin.com/in/adityaaraj"
+                  ><i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+  
+    </section>  
+    
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 1,
+            stretch: 0,
+            depth: 300,
+            modifier: 1,
+            slideShadows: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
+
+      <!-- Footer -->
+      <div class="footer-top"></div>
+        <footer class="footer">
+          <img
+            src="Smile. Smile logo. Yellow logo smile. (Logo).png"
+            alt="Logo"
+            width="70px"
+            class="footer-logo"
+          />
+          <img src="asset 16.svg" alt="" width="50px" class="reset" />
+        <div class="policy">
+          <ul>
+            <li style="border-right: 2px solid #555">Privacy Policy</li>
+            <li>Termes & Conditions</li>
+          </ul>
+        </div>
+        <p>Copyright &copy; CSE Squad 22-26 | All rights reserved</p>
+        </footer>
+</body>
+</html>
