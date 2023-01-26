@@ -208,6 +208,10 @@ a.active, a:hover{
     }
 }
 @media (max-width: 858px){
+	.board{
+		width:100%;
+		position:relative;
+	}
     .checkbtn{
         display: block;
     }
