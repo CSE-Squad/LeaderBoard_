@@ -534,6 +534,7 @@ a.active, a:hover{
     float: right;
     border-radius: 50%;
     border: 2px solid #a4a4a4;
+	cursor:pointer;
 }
 .footer .policy{
     float: right;
