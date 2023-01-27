@@ -81,13 +81,7 @@ label.logo-label{
     font-family: 'Righteous', cursive;
     color: rgb(58, 10, 31);
 }
-/* nav .logo i{
-    background: -webkit-linear-gradient(#b50211, #550909);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    vertical-align: baseline;
-    font-size: 2.3rem;
-} */
+
 nav ul{
     float: right;
     margin-right: 20px;
@@ -526,7 +520,7 @@ a.active, a:hover{
     .board{
         transform: none;
         margin: 5px;
-        width: 100%;
+        width: 97%;
         
     }
     .footer{
