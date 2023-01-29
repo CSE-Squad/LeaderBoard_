@@ -10,13 +10,17 @@
 }
 
 
-body{width: 100%;
-
+body{
+    width: 100%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color: antiquewhite;
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #010111, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1a1d31, #11101a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: #141E30;  fallback for old browsers */
+    background-color: #090423;
+    /* background: -webkit-linear-gradient(to right, #010111, #141E30);  Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #1a1d31, #11101a); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+html, body{
+    overflow-x: hidden;
 }
 :root {
     --font: 'Poppins', sans-serif;
@@ -25,7 +29,7 @@ body{width: 100%;
 }
 ::selection{
     color: #e5e0b2;
-    background-color: #7e5c04;
+    background-color: #a97a04;
 }
 html::-webkit-scrollbar{
     width: 0.6rem;
@@ -35,7 +39,8 @@ html::-webkit-scrollbar{
     }
     html::-webkit-scrollbar-thumb{
     /* background: #70a388; */
-    background: #040850;
+    /* background: #040850; */
+    background: linear-gradient(#6e5c02, #ad9113  , #f9d423, #cba602, #857509);
     border-radius: 5px;
     }
 .container{
@@ -81,7 +86,13 @@ label.logo-label{
     font-family: 'Righteous', cursive;
     color: rgb(58, 10, 31);
 }
-
+/* nav .logo i{
+    background: -webkit-linear-gradient(#b50211, #550909);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    vertical-align: baseline;
+    font-size: 2.3rem;
+} */
 nav ul{
     float: right;
     margin-right: 20px;
@@ -116,17 +127,21 @@ a.active, a:hover{
 }
 /* main section */
  .main{
-    margin-inline: 30px;
+    /* margin-inline: 20px; */
     display: flex;
     justify-content: center;
     align-items: center;
+    background: -webkit-linear-gradient(to right, #010111, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1a1d31, #11101a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .main2{
+    margin-inline: 20px;
     width: 700px;
     height: 500px;
     margin-top: 80px;
     text-align: center;
+
 }
 .main2 h2{
     padding: 5px;
@@ -157,6 +172,7 @@ a.active, a:hover{
     color: rgb(57, 81, 159);
     padding: 5px;
     margin-top: 20px;
+    text-align: center;
 }
 
 /* Board of fame */
@@ -178,13 +194,44 @@ a.active, a:hover{
 .board h2{
     
     padding: 10px;
-    background: -webkit-linear-gradient(rgb(213, 164, 3), rgb(59, 46, 2));
+    /* background: -webkit-linear-gradient(rgb(213, 164, 3), rgb(59, 46, 2)); */
+    /* background: -webkit-linear-gradient(rgb(148, 3, 3), rgb(45, 0, 0));*/
+    background: -webkit-linear-gradient(#857509, #ad9113  ,#996903, #f9d423, #996903, #ad9113, #857509);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip:transparent;
+    background-clip:transparent; 
     font-size: 2rem;
     font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+  /* background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  ); */
+  background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%,#ff1361 67%, #857509, #ad9113  ,#996903, #f9d423, #ad9113, #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  
+ 
 }
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+    
+
 .section-header {
 	margin-bottom: 60px;
 	position: relative;
@@ -216,10 +263,11 @@ a.active, a:hover{
 	margin: 0;
 	font-size: 1rem;
 	font-weight: 500;
-	color: #9195a2;
+	color: #87745b;
 }
 .section-header h2{
-    background: -webkit-linear-gradient(rgb(213, 164, 3), rgb(59, 46, 2));
+    /* background: -webkit-linear-gradient(rgb(213, 164, 3), rgb(59, 46, 2)); */
+    background: -webkit-linear-gradient(#857509, #ad9113  ,#996903, #f9d423, #996903, #ad9113, #857509);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 2rem;
@@ -233,7 +281,11 @@ a.active, a:hover{
 .beta-red {
     /* margin-top: 80px; */
     padding-top: 50px;
-    background-color: #1d2136;
+    /* background-color: #1d2136; */
+    background-color: #090423;
+    /* background: linear-gradient(to top right, #1e1b1b, #1b0125, #120726); */
+    /* background: linear-gradient(to top right, #1e1b1b, #1b0125, #120726); */
+    
 }
 
 
@@ -253,7 +305,8 @@ a.active, a:hover{
 .card {
     width: 330px;
     height: 450px;
-    background: linear-gradient(to top right, #1d2136, #1d2136 );
+    /* background: linear-gradient(to top right, #1d2136, #1d2136 ); */
+    background-color: #090423 ;
     border-radius: 2em;
     box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
     padding: 2em 1em;
@@ -346,33 +399,176 @@ a.active, a:hover{
 .social .fa-instagram:hover{
     color: rgb(253, 13, 129);
 }
+.swipe{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}.swipe h3{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+ font-size: 1.5rem;
+}
 
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
 
 /* -------footer section--------- */
 
-/* Footer top */
-.footer-top{
-    height: 20px;
+/* Footer-section 
+footer{
+    /* background-color: #0f111c;
+    width: 100%;
+    height: 190px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00); */
+    /* background-color: #7e5c04; 
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+    border-top: 2px solid #7e5c04;
+
+}*/
+/*.footer-container{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* border-top: 2px solid #7e5c04; */
+/*}
+.footer-entity{
+    flex-basis: 25%;
+    padding: 10px;
 }
-/* Footer-section */
-.footer{
-    margin-top: 30px;
-    margin-inline: auto;
-    padding: 20px;
-    padding-top: 30px;
-    background-color: #0f111c;
-}
-.footer{
-    width: 100vw;
-    height: 200px;
-    margin-inline: auto;
-}
-.footer .footer-logo{
-    border: 3px solid #ab8d04;
+.footer-entity .footer-logo{
+    border: 3px solid #ad6b10;
     border-radius: 80px;
-    width: 70px;
+    width: 60px;
+    margin: 20px;
+    
 }
-.footer .scrollToTopBtn{
+.footer-entity h2{
+    color: #fff;
+    background: -webkit-linear-gradient(rgb(213, 164, 3), rgb(59, 46, 2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.footer-entity p{
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #fff;
+    text-align: left;
+    line-height: 1rem;
+} */
+
+/* nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
+footer{
+    width: 100%;
+    background: linear-gradient(to top right, #1e1b1b, #1b0125, #120726);
+    /* bottom: 0; */
+    position: absolute;
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+    border-top: 2px solid #7e5c04;
+}
+.footer-container{
+    width: 85%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid #7e5c04;
+}
+.footer-entity{
+    flex-basis: 30%;
+    padding: 10px;
+}
+.footer-entity h2{
+    background: -webkit-linear-gradient(rgb(213, 164, 3), rgb(59, 46, 2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 10px;
+}
+.footer-entity img{
+    width: 50px;
+    border: 2px solid darkgoldenrod;
+    border-radius: 25px;
+}
+.footer-entity .address{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 0.8rem;
+    color: #87745b;
+
+    
+}
+.footer-entity .add1{
+    margin-top: 25px;
+}
+.footer-entity h3{
+    color: #7e5c04;
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.footer-entity .email-id{
+    color:#87745b;
+    width: fit-content;
+    border-bottom: 1px solid #87745b;
+    margin: 20px 0;
+}
+.footer-entity ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footer-entity ul li a{
+    text-decoration: none;
+    color: #87745b;
+    
+}
+.footer-entity p i{
+    vertical-align: middle;
+}
+.footer-entity p .form{
+    border-bottom: 1px solid #87745b;
+}
+.copy-right{
+    text-align: center;
+    color: #87745b;
+    padding: 10px;
+    font-size: 0.7rem;
+}
+/* nmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+
+/* .footer .scrollToTopBtn{
     width: 50px;
     float: right;
     border-radius: 50%;
@@ -401,7 +597,7 @@ a.active, a:hover{
     text-align: center;
     
     font-family: 'Roboto' ,sans-serif;
-}
+} */
 
 @media (max-width:952px) {
     label.logo{
@@ -520,11 +716,18 @@ a.active, a:hover{
     .board{
         transform: none;
         margin: 5px;
-        width: 97%;
+        width: 100%;
         
     }
-    .footer{
+    /* .footer{
         width: 100vw;
+    } */
+    .footer-container{
+        flex-flow: column;
+        flex-wrap: nowrap;
+    }
+    .footer-entity ul{
+        display: none;
     }
 }
 @media (max-width:310px){
