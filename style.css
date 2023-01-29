@@ -726,7 +726,7 @@ footer{
         flex-flow: column;
         flex-wrap: nowrap;
     }
-    .footer-entity ul{
+    .footer-entity .links{
         display: none;
     }
 }
